@@ -7,7 +7,7 @@ async function cloneAndClean() {
     display.innerHTML = "<h2 style='text-align:center; padding-top:50px;'>MENGKLONING WEB & MEMBERSIHKAN SAMPAH...</h2>";
 
     try {
-        const targetUrl = `https://www.unlockffbeta.com/id/${id}`;
+        const targetUrl = `https://www.unlockffbeta.com${id}`;
         // Pake AllOrigins buat ambil data HTML mentah
         const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`);
         const data = await res.json();
