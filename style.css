@@ -1,0 +1,13 @@
+body { margin: 0; background: #000; color: #00ff41; font-family: sans-serif; }
+.header { 
+    padding: 15px; background: #111; border-bottom: 2px solid #00ff41;
+    display: flex; gap: 10px; justify-content: center;
+}
+input { padding: 10px; background: #000; border: 1px solid #00ff41; color: #fff; }
+button { background: #00ff41; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; }
+#clean-web-display { 
+    width: 100%; height: calc(100vh - 70px); 
+    background: #fff; overflow-y: auto; color: #000;
+}
+/* Paksa sembunyikan elemen iklan jika masih ada yang lolos */
+iframe, .ads, .ad-container, [id*="google_ads"], [class*="judol"] { display: none !important; }
